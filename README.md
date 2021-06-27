@@ -15,5 +15,4 @@ Buttons welche auf der jeweiligen Seite ein Tor (Punkt) abziehen.</p>
 zwischen Tor und Ballausgabe gezählt.</p>
 <p>Zur Ansteuerung der Komponenten wird ein Raspberry Pi pico
 verwendet.</p>
-</body>
-</html>
+<img src="Bilder/Button.JPG">
