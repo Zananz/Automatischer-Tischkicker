@@ -1,4 +1,3 @@
-<body style="background-image:url(Bilder/Button.JPG)">
 <h1>Automatischer Tischkicker</h1>
 <h2>Beschreibung</h2>
 <p>Ein umgebauter Tischkicker welcher in der Lage ist Tore
@@ -15,7 +14,6 @@ Buttons welche auf der jeweiligen Seite ein Tor (Punkt) abziehen.</p>
 <img src="Bilder/Terminal.JPG">
 <p>Tore werden mit Hilfe von Lichtschranken an der Ballführung
 zwischen Tor und Ballausgabe gezählt.</p>
-<img src="Bilder/Ball_Führung">
-<p>Zur Ansteuerung der Komponenten wird ein Raspberry Pi pico
-verwendet.</p>
-</body>
+<img src="Bilder/Ball_Führung.JPG">
+<p>Zur Ansteuerung der Komponenten wird ein Raspberry Pi pico verwendet welcher mit einer 3D-gedruckten <a href = "https://github.com/Zananz/Automatischer-Tischkicker/blob/main/3D-Modele/Halterung%20Platine.stl">Halterung</a> an der Unterseite des Tischkickers befestigt ist.</p>
+<img src="Bilder/Pico.JPG">
