@@ -120,5 +120,5 @@ zwischen Tor und Ballausgabe gezählt.</p>
 Die Lichtschranke besteht aus einer 3D-gedruckten Schelle in welche eine Laserdiode und ein Fotowiederstand geklebt wird. Diese liegen sich so gegenüber, dass der von der Diode ausgehende Lichtstrahl auf den Fotowiederstand trifft. Die Schelle wird so am Führungsschlauch des Balls angebracht, dass die für den Laser und den Fotowiederstand zu bohrenden Löcher den Ball nicht beim rollen behindern.<br>
 Der Schaltplan für die Schranke:
 </p>
-<img src="Bilder/Schaltplan-Lichtschranke.JPG" alt="">
-<p>Wobei S_1 in der <a href="https://github.com/Zananz/Automatischer-Tischkicker#verkablung">Verkablungsübersicht</a>für Data (bei Butten Spieler_1) steht.(S_2 = Spieler-2)</p>
+<img src="Bilder/Schaltplan-Lichtschranke.jpg" alt="">
+<p>Wobei S_1 in der <a href="https://github.com/Zananz/Automatischer-Tischkicker#verkablung">Verkablungsübersicht</a> für Data (bei Butten Spieler_1) steht.(S_2 = Spieler-2)</p>
