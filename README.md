@@ -1,4 +1,9 @@
 <h1>Automatischer Tischkicker</h1>
+<p>
+1 <a href="https://github.com/Zananz/Automatischer-Tischkicker#beschreibung">Beschreibung</a><br>
+2 <a href="https://github.com/Zananz/Automatischer-Tischkicker#funktionsweise">Funktionsweise</a><br>
+3 <a href="https://github.com/Zananz/Automatischer-Tischkicker#anleitung">Anleitung</a><br>
+</p>
 <h2>Beschreibung</h2>
 <p>Ein umgebauter Tischkicker welcher in der Lage ist Tore
 automatisch zu zählen und Spielstände von bis zu 16 Spielern zu
@@ -17,3 +22,4 @@ zwischen Tor und Ballausgabe gezählt.</p>
 <img src="Bilder/Ball_Führung.JPG">
 <p>Zur Ansteuerung der Komponenten wird ein Raspberry Pi pico verwendet welcher mit einer 3D-gedruckten <a href = "https://github.com/Zananz/Automatischer-Tischkicker/blob/main/3D-Modele/Halterung%20Platine.stl">Halterung</a> an der Unterseite des Tischkickers befestigt ist.</p>
 <img src="Bilder/Pico.JPG">
+<h2>Anleitung</h2>
