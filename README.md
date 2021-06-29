@@ -177,7 +177,7 @@ Zum bohren der Löcher für die Buttons wird ein 28mm Bohrer benätigt. Da die T
 Um den Pico auf der Platine an der Unterseite des Tischkickers zu befestigen wird eine 3D-gedruckte <a href="https://github.com/Zananz/Automatischer-Tischkicker/blob/main/3D-Modele/Halterung%20Platine.stl">Halterung</a> benötigt.<br>
 Um den Pico mit Strom zu Versorgen ist es nicht ratsam dierekt mit einem USB-Kabel von einem Netzteil in der Steckdose an den USB-Eingang des Picos zu gehen, da es leit zu einem Defekt an diesem kommen kann wenn bspw. am Kabel gezogen wird. Es ist Empfehlenswert einen SStoßabfänger einzubauen. In diesem Fall ein an die Seitenwand geklebtes 12V DC Netzteil an welches ein 5V USB-Stepdown-Converter angeschlossen ist. Dies hat mehrere Vorteile zum einen wird zug am Kabel so am Netzteil "abgefangen" zum anderen besteht die Möglichkeit sein Smarphone am Tischkicker zu Laden.
 </p>
-<img src="Bilder/ Stromversorgung.JPG">
+<img src="Bilder/Stromversorgung.JPG">
 <p>
 Sind alle Bauteile angebracht und Verkabelt, ist der Bau abgeschlossen.
 </p>
@@ -186,3 +186,7 @@ Sind alle Bauteile angebracht und Verkabelt, ist der Bau abgeschlossen.
 Alle .py Dateien aus dem Repo müssen auf den Pico gepielt werden.<br>
 Es muss ein Ordner "Spielstände" auf dem Pico erstellt werden. Ist dies geschehen muss Spielstände_auf_0.py ausgeführt werden. Wurde das Skript ausgeführt sollten im Ordner "Spielstände" Textdateien im Muster "4ställigeBinärzahl-4ställigeBinärzahl.txt" vorzufinden sein. Ist dies der Fall ist der Tischkicker einsatzbereit. Bei ausführung von main.py (starten des Picos) wird das Programm zur steuerung des Tischkickers ausgeführt.
 </p>
+<h4>Spielernamen</h4>
+<p>Von Zeile 2-17 in main.py befinden sich die Namenszuweisungen, um bsp.w Spieler_4 den Namen Bob zuzuweisen muss "Spieler_4 = "Frei_3"" in "Spieler_4 = "Bob"" geändert werden.</p>
+<h4>Fehlerbehebung Lichtschranke</h4>
+<p>Sollten dauerhaft Tore gezählt werden ist es ratsam die in main.py ab Zeile 19 befindlichen Grenzwerte der Lichtschranken zu senken.(Diese sellen ACD().read_u16() werteda) Die Grenzwerte können je nach verwendeten Bauteilen variieren.</p>
