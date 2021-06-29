@@ -39,6 +39,12 @@ zwischen Tor und Ballausgabe gezählt.</p>
     <th>Pico Pin</th><th>LCD Spieler-1</th>
   </tr>
   <tr>
+    <td>GND</td><td>GND</td>
+  </tr>
+  <tr>
+    <td>V_BUS</td><td>V</td>
+  </tr>
+  <tr>
     <td>6</td><td>sda</td>
   </tr>
   <tr>
@@ -48,37 +54,64 @@ zwischen Tor und Ballausgabe gezählt.</p>
     <th>Pico Pin</th><th>LCD Spieler-2</th>
   </tr>
   <tr>
+    <td>GND</td><td>GND</td>
+  </tr>
+  <tr>
+    <td>V_BUS</td><td>V</td>
+  </tr>
+  <tr>
     <td>0</td><td>sda</td>
   </tr>
   <tr>
     <td>1</td><td>scl</td>
   </tr>
   <tr>
-    <th>Pico</th><th>Lichtschranke Spieler-1</th>
+    <th>Pico</th><th>Lichtschranke Spieler-1 (siehe <a href="https://github.com/Zananz/Automatischer-Tischkicker#laserschranken">hier</a>)</th>
   </tr>
   <tr>
-    <td>ADC 0</td><td>Data (siehe <a href="https://github.com/Zananz/Automatischer-Tischkicker#laserschranken">hier</a>)</td>
+    <td>GND</td><td>GND</td>
   </tr>
   <tr>
-    <th>Pico</th><th>Lichtschranke Spieler-2</th>
+    <td>3V3</td><td>3.3V</td>
   </tr>
   <tr>
-    <td>ADC 1</td><td>Data (siehe <a href="https://github.com/Zananz/Automatischer-Tischkicker#laserschranken">hier</a>)</td>
+    <td>ADC 0</td><td>Data</td>
+  </tr>
+  <tr>
+    <th>Pico</th><th>Lichtschranke Spieler-2 (siehe <a href="https://github.com/Zananz/Automatischer-Tischkicker#laserschranken">hier</a>)</th>
+  </tr>
+  <tr>
+    <td>GND</td><td>GND</td>
+  </tr>
+  <tr>
+    <td>3V3</td><td>3.3V</td>
+  </tr>
+  <tr>
+    <td>ADC 1</td><td>Data</td>
   </tr>
   <tr>
     <th>Pico Pin</th><th>Button Spieler-1</th>
   </tr>
   <tr>
-    <td>16</td><td></td>
+    <td>V_BUS</td><td>Anschluss 1</td>
+  </tr>
+  <tr>
+    <td>16</td><td>Anschluss 2</td>
   </tr>
   <tr>
     <th>Pico Pin</th><th>Button Spieler-2</th>
   </tr>
   <tr>
-    <td>17</td><td></td>
+    <td>V_BUS</td><td>Anschluss 1</td>
+  </tr>
+  <tr>
+    <td>17</td><td>Anschluss 2</td>
   </tr>
   <tr>
     <th>Pico Pin</th><th>Spielereingabe Spieler-1</th>
+  </tr>
+  <tr>
+    <td>V_BUS</td><td>COM an allen Schaltern (SPDT)</td>
   </tr>
   <tr>
     <td>12</td><td>Schalter 1</td>
@@ -97,6 +130,9 @@ zwischen Tor und Ballausgabe gezählt.</p>
   </tr>
   <tr>
     <th>Pico Pin</th><th>Spielereingabe Spieler-2</th>
+  </tr>
+  <tr>
+    <td>V_BUS</td><td>COM an allen Schaltern (SPDT)</td>
   </tr>
   <tr>
     <td>4</td><td>Schalter 1</td>
