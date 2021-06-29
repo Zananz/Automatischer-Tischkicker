@@ -189,4 +189,4 @@ Es muss ein Ordner "Spielstände" auf dem Pico erstellt werden. Ist dies gescheh
 <h4>Spielernamen</h4>
 <p>Von Zeile 2-17 in main.py befinden sich die Namenszuweisungen, um bsp.w Spieler_4 den Namen Bob zuzuweisen muss "Spieler_4 = "Frei_3"" in "Spieler_4 = "Bob"" geändert werden.</p>
 <h4>Fehlerbehebung Lichtschranke</h4>
-<p>Sollten dauerhaft Tore gezählt werden ist es ratsam die in main.py ab Zeile 19 befindlichen Grenzwerte der Lichtschranken zu senken.(Diese sellen ACD().read_u16() werteda) Die Grenzwerte können je nach verwendeten Bauteilen variieren.</p>
+<p>Sollten dauerhaft Tore gezählt werden ist es ratsam die in main.py ab Zeile 19 befindlichen Grenzwerte der Lichtschranken zu senken.(Diese sellen ACD().read_u16() Werte da) Die Grenzwerte können je nach verwendeten Bauteilen variieren.</p>
