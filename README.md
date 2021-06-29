@@ -32,8 +32,9 @@ zwischen Tor und Ballausgabe gezählt.</p>
 &nbsp;&nbsp;&nbsp;&nbsp;4. <a href="https://www.ebay.de/itm/353160204184?mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5338364437&customid=353160204184_12576&toolid=11000">2x 16x2 LCD-Display + I2C Controller </a><br>
 &nbsp;&nbsp;&nbsp;&nbsp;5. <a href="https://www.ebay.de/itm/333602388391?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m2749.l2649">10x Schalter</a><br>
 &nbsp;&nbsp;&nbsp;&nbsp;6. <a href="https://www.reichelt.de/arcade-button-mit-mikrostaster-rot-arc-button-rd-p225319.html?PROVID=2788&gclid=Cj0KCQjw5uWGBhCTARIsAL70sLJVQ4KVxEaYdbZvQqt8TTKTVURrjntogCm4_aFAXm4QZtlTiLIYugQaAh4OEALw_wcB">2x Button 33mm Ø</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;7. M3 Schrauben (4x 5mm, 4x ca.50mm), 4 Muttern
-&nbsp;&nbsp;&nbsp;&nbsp;8. <a href="https://www.ebay.de/itm/174035126580?chn=ps&mkevt=1&mkcid=28">Pin Header Male</a>, <a href="https://www.ebay.de/itm/174252775416?chn=ps&mkevt=1&mkcid=28">Pin Header Female</a>
+&nbsp;&nbsp;&nbsp;&nbsp;7. M3 Schrauben (4x 5mm, 4x ca.50mm), 4 Muttern<br>
+&nbsp;&nbsp;&nbsp;&nbsp;8. <a href="https://www.ebay.de/itm/174035126580?chn=ps&mkevt=1&mkcid=28">Pin Header Male</a>, <a href="https://www.ebay.de/itm/174252775416?chn=ps&mkevt=1&mkcid=28">Pin Header Female</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;9. <a href="https://www.ebay.de/itm/323649063851?chn=ps&mkevt=1&mkcid=28">50 x 70 mm Lochraster 2,54 mm Platine</a><br>
 </p>
 <h4>Verkablung</h4>
 <table>
@@ -173,5 +174,15 @@ Zum bohren der Löcher für die Buttons wird ein 28mm Bohrer benätigt. Da die T
 </p>
 <img src="Bilder/Tischkicker.JPG">
 <p>
-
+Um den Pico auf der Platine an der Unterseite des Tischkickers zu befestigen wird eine 3D-gedruckte <a href="https://github.com/Zananz/Automatischer-Tischkicker/blob/main/3D-Modele/Halterung%20Platine.stl">Halterung</a> benötigt.<br>
+Um den Pico mit Strom zu Versorgen ist es nicht ratsam dierekt mit einem USB-Kabel von einem Netzteil in der Steckdose an den USB-Eingang des Picos zu gehen, da es leit zu einem Defekt an diesem kommen kann wenn bspw. am Kabel gezogen wird. Es ist Empfehlenswert einen SStoßabfänger einzubauen. In diesem Fall ein an die Seitenwand geklebtes 12V DC Netzteil an welches ein 5V USB-Stepdown-Converter angeschlossen ist. Dies hat mehrere Vorteile zum einen wird zug am Kabel so am Netzteil "abgefangen" zum anderen besteht die Möglichkeit sein Smarphone am Tischkicker zu Laden.
+</p>
+<img src="Bilder/ Stromversorgung.JPG">
+<p>
+Sind alle Bauteile angebracht und Verkabelt, ist der Bau abgeschlossen.
+</p>
+<h3>Software</h3>
+<p>
+Alle .py Dateien aus dem Repo müssen auf den Pico gepielt werden.<br>
+Es muss ein Ordner "Spielstände" auf dem Pico erstellt werden. Ist dies geschehen muss Spielstände_auf_0.py ausgeführt werden. Wurde das Skript ausgeführt sollten im Ordner "Spielstände" Textdateien im Muster "4ställigeBinärzahl-4ställigeBinärzahl.txt" vorzufinden sein. Ist dies der Fall ist der Tischkicker einsatzbereit. Bei ausführung von main.py (starten des Picos) wird das Programm zur steuerung des Tischkickers ausgeführt.
 </p>
