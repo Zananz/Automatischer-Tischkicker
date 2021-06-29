@@ -1,16 +1,38 @@
+#Anzupassen:
+Spieler_1  = "Gast_1"	#0000
+Spieler_2  = "Frei_1"	#0001
+Spieler_3  = "Frei_2"	#0010
+Spieler_4  = "Frei_3"	#0011
+Spieler_5  = "Frei_4"	#0100
+Spieler_6  = "Frei_5"	#0101
+Spieler_7  = "Frei_6"	#0110
+Spieler_8  = "Frei_7"	#0111
+Spieler_9  = "Frei_8"	#1000
+Spieler_10 = "Frei_9"	#1001
+Spieler_11 = "Frei_10" #1010
+Spieler_12 = "Frei_11" #1011
+Spieler_13 = "Frei_12" #1100
+Spieler_14 = "Frei_13" #1101
+Spieler_15 = "Frei_14" #1110
+Spieler_16 = "Gast_2"  #1111
+
+lichtschranke_1_grenzwert = 30000
+lichtschranke_2_grenzwert = 30000
+
+
 from machine import I2C, Pin
 import time
 from machine_i2c_lcd import I2cLcd
 import bauteile as bt
+
+lichtschranke_1 = bt.Lichtschranke(0, lichtschranke_1_grenzwert)
+lichtschranke_2 = bt.Lichtschranke(1, lichtschranke_2_grenzwert)
 
 i2c_1 = I2C(1,sda=Pin(6), scl=Pin(7),freq = 400000)
 i2c_2 = I2C(0,sda=Pin(0), scl=Pin(1),freq = 400000)
 
 lcd_1 = I2cLcd(i2c_1, 39, 2, 16)
 lcd_2 = I2cLcd(i2c_2, 39, 2, 16)
-
-lichtschranke_1 = bt.Lichtschranke(0, 30000)
-lichtschranke_2 = bt.Lichtschranke(1, 35000)
     
 Spieler_Eingabe_1 = bt.Spieler_Eingabe(12,13,14,15,11)
 Spieler_Eingabe_2 = bt.Spieler_Eingabe(4,3,2,8,5)
@@ -18,7 +40,7 @@ Spieler_Eingabe_2 = bt.Spieler_Eingabe(4,3,2,8,5)
 Minus_Button_1 = bt.Minus_Button(16)
 Minus_Button_2 = bt.Minus_Button(17)
 
-spieler_liste = {"0000":"Gast_1", "0001":"Frank", "0010":"Till", "0011":"Franz", "0100":"Seidel", "0101":"Jacob", "0110":"John", "0111":"Marius", "1000":"Marie", "1001":"Pauli", "1010":"Leo", "1011":"Celine", "1100":"Paul", "1101":"Frei_2", "1110":"Frei_3", "1111":"Gast_2" }
+spieler_liste = {"0000":Spieler_1, "0001":Spieler_2, "0010":Spieler_3, "0011":Spieler_4, "0100":Spieler_5, "0101":Spieler_6, "0110":Spieler_7, "0111":Spieler_8, "1000":Spieler_9, "1001":Spieler_10, "1010":Spieler_11, "1011":Spieler_12, "1100":Spieler_13, "1101":Spieler_14, "1110":Spieler_15, "1111":Spieler_16}
 
 def auf_spiel_warten(Spieler_Eingabe_1, Spieler_Eingabe_2, spieler_liste, lcd_1, lcd_2):
     

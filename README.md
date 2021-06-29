@@ -32,6 +32,8 @@ zwischen Tor und Ballausgabe gezählt.</p>
 &nbsp;&nbsp;&nbsp;&nbsp;4. <a href="https://www.ebay.de/itm/353160204184?mkevt=1&mkcid=1&mkrid=707-53477-19255-0&campid=5338364437&customid=353160204184_12576&toolid=11000">2x 16x2 LCD-Display + I2C Controller </a><br>
 &nbsp;&nbsp;&nbsp;&nbsp;5. <a href="https://www.ebay.de/itm/333602388391?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m2749.l2649">10x Schalter</a><br>
 &nbsp;&nbsp;&nbsp;&nbsp;6. <a href="https://www.reichelt.de/arcade-button-mit-mikrostaster-rot-arc-button-rd-p225319.html?PROVID=2788&gclid=Cj0KCQjw5uWGBhCTARIsAL70sLJVQ4KVxEaYdbZvQqt8TTKTVURrjntogCm4_aFAXm4QZtlTiLIYugQaAh4OEALw_wcB">2x Button 33mm Ø</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;7. M3 Schrauben (4x 5mm, 4x ca.50mm), 4 Muttern
+&nbsp;&nbsp;&nbsp;&nbsp;8. <a href="https://www.ebay.de/itm/174035126580?chn=ps&mkevt=1&mkcid=28">Pin Header Male</a>, <a href="https://www.ebay.de/itm/174252775416?chn=ps&mkevt=1&mkcid=28">Pin Header Female</a>
 </p>
 <h4>Verkablung</h4>
 <table>
@@ -157,4 +159,19 @@ Die Lichtschranke besteht aus einer 3D-gedruckten Schelle in welche eine Laserdi
 Der Schaltplan für die Schranke:
 </p>
 <img src="Bilder/Schaltplan-Lichtschranke.jpg" alt="">
-<p>Wobei S_1 in der <a href="https://github.com/Zananz/Automatischer-Tischkicker#verkablung">Verkablungsübersicht</a> für Data (bei Butten Spieler_1) steht.(S_2 = Spieler-2)</p>
+<p>Wobei S_1 in der <a href="https://github.com/Zananz/Automatischer-Tischkicker#verkablung">Verkablungsübersicht</a> für Data (bei Butten Spieler-1) steht.(S_2 = Spieler-2)</p>
+<h4>Bau</h4>
+<p>
+Terminal:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1. Ausdruckern der Bauteile: <a href="https://github.com/Zananz/Automatischer-Tischkicker/blob/main/3D-Modele/Tischkicker_Station.stl">Station</a>, <a href="https://github.com/Zananz/Automatischer-Tischkicker/blob/main/3D-Modele/Abdeckung.stl">Abdeckung</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;2. Einbauen der LCD-Display und der Schalter. (Verkabeln nach <a href="https://github.com/Zananz/Automatischer-Tischkicker#verkablung">Verkablungsübersicht</a>)<br>
+</p>
+<p>
+Allgemein:
+Alle Bauteile anbringen wie im Bild zu sehen. Mehr Bilder <a href="https://github.com/Zananz/Automatischer-Tischkicker/tree/main/Bilder">hier</a>.<br>
+Zum bohren der Löcher für die Buttons wird ein 28mm Bohrer benätigt. Da die Terminals mit 2 M3 Schrauben befestigt werden wird ein 3,5mm Bohrer benötigt. Zu empfehlen ist weiterhin ein 10mm Bohrer zum bohren von Kabeldurchführungen an den Terminals.
+</p>
+<img src="Bilder/Tischkicker.JPG">
+<p>
+
+</p>
